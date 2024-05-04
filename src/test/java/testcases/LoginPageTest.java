@@ -3,6 +3,7 @@ package testcases;
 
 import java.io.IOException;
 
+import org.apache.log4j.Logger;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -19,9 +20,14 @@ public class LoginPageTest extends BaseTest {
 	public static String Email;
 	public static String Password;
 
+	
+	static Logger log = Logger.getLogger(LoginPageTest.class);
+
 	@Test
 	public void LoginSuccessful() throws InvalidFormatException, IOException, InterruptedException {
 
+		
+		log.info("*********************LoginSuccessful Started*********************");
 		homePage.navigateToHomePage();
 		homePage.clickSignIn();
 
@@ -47,6 +53,8 @@ public class LoginPageTest extends BaseTest {
 
 	@Test
 	public void LoginWithInvalidCredentials() {
+		
+		log.info("*********************LoginWithInvalidCredentials Started*********************");
 		homePage.navigateToHomePage();
 		homePage.clickSignIn();
 		loginPage.enterRegisteredEmail("asdasd@gmail.com");
@@ -62,6 +70,8 @@ public class LoginPageTest extends BaseTest {
 	@Test
 	public void ForgotFunctionality() throws InvalidFormatException, IOException {
 
+		log.info("*********************ForgotFunctionality Started*********************");
+		
 		homePage.navigateToHomePage();
 		homePage.clickSignIn();
 		loginPage.clickForgotPasswordButton();
