@@ -56,7 +56,7 @@ public class CredentialsFetchExcel {
 
 	public static Map<String, String> vidit(String al) throws InvalidFormatException, IOException {
 		List<Map<String, String>> myRowsData = readAllRowsData(al);
-		Map<String, String> myData = myRowsData.get(myRowsData.size()-1);
+		Map<String, String> myData = myRowsData.get(myRowsData.size()-3);
 		FirstName = myData.get("firstname");
 		LastName = myData.get("lastname");
 		Password = myData.get("password");

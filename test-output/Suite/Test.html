@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Apr 30 12:41:18 IST 2024</td>
+<td>Started on:</td><td>Sat May 04 15:04:55 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>120 seconds (120666 ms)</td>
+<tr><td>Total time:</td><td>76 seconds (76282 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,18 +76,29 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testcases.OrderPlacement.endToEnd()'><b>endToEnd</b><br>Test class: testcases.OrderPlacement</td>
-<td><div><pre>java.lang.AssertionError: Shipping information does not match the expected value. expected [VSNHF TVWGILF 3 MUB Skopje, 1000 North Macedonia +38977334455] but found []
-	at testcases.OrderPlacement.endToEnd(OrderPlacement.java:124)
+<td title='testcases.LoginPageTest.LoginSuccessful()'><b>LoginSuccessful</b><br>Test class: testcases.LoginPageTest</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: div[class=&apos;panel header&apos;] span[class=&apos;logged-in&apos;] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.92, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\Users\VIDIT~1.PAT\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50997}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50997/devtoo..., se:cdpVersion: 124.0.6367.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 858564477e0ccc62c05c9745228947e2
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.MyAccountPage.isLoggedIn(MyAccountPage.java:79)
+	at testcases.LoginPageTest.LoginSuccessful(LoginPageTest.java:46)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2109615807", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2109615807'><pre>java.lang.AssertionError: Shipping information does not match the expected value. expected [VSNHF TVWGILF 3 MUB Skopje, 1000 North Macedonia +38977334455] but found []
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-	at org.testng.Assert.assertEquals(Assert.java:131)
-	at org.testng.Assert.assertEquals(Assert.java:655)
-	at testcases.OrderPlacement.endToEnd(OrderPlacement.java:124)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace870019773", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace870019773'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: div[class=&apos;panel header&apos;] span[class=&apos;logged-in&apos;] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.92, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\Users\VIDIT~1.PAT\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50997}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50997/devtoo..., se:cdpVersion: 124.0.6367.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 858564477e0ccc62c05c9745228947e2
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.MyAccountPage.isLoggedIn(MyAccountPage.java:79)
+	at testcases.LoginPageTest.LoginSuccessful(LoginPageTest.java:46)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -115,8 +126,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>69</td>
-<td>testcases.OrderPlacement@6200f9cb</td></tr>
+<td>31</td>
+<td>testcases.LoginPageTest@45ca843</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -127,15 +138,15 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testcases.CreateAccountPageTest.validateMandatoryFieldsOnCreateAccountPage()'><b>validateMandatoryFieldsOnCreateAccountPage</b><br>Test class: testcases.CreateAccountPageTest</td>
+<td title='testcases.LoginPageTest.LoginWithInvalidCredentials()'><b>LoginWithInvalidCredentials</b><br>Test class: testcases.LoginPageTest</td>
 <td></td>
-<td>13</td>
-<td>testcases.CreateAccountPageTest@411f53a0</td></tr>
+<td>11</td>
+<td>testcases.LoginPageTest@45ca843</td></tr>
 <tr>
-<td title='testcases.CreateAccountPageTest.CreateAccount()'><b>CreateAccount</b><br>Test class: testcases.CreateAccountPageTest</td>
+<td title='testcases.LoginPageTest.ForgotFunctionality()'><b>ForgotFunctionality</b><br>Test class: testcases.LoginPageTest</td>
 <td></td>
-<td>27</td>
-<td>testcases.CreateAccountPageTest@411f53a0</td></tr>
+<td>17</td>
+<td>testcases.LoginPageTest@45ca843</td></tr>
 </table><p>
 </body>
 </html>
